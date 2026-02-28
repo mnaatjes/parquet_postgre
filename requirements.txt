@@ -1,0 +1,9 @@
+pandas
+pyarrow
+fastparquet
+polars
+duckdb
+dask[complete]
+ijson
+tqdm
+ipykernel
