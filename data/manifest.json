@@ -1,0 +1,146 @@
+{
+  "manifest_version": "1.0",
+  "project": "spansh_data_analysis",
+  "last_updated": "2026-02-28T03:55:04Z",
+  "data": {
+    "raw_files": [
+      {
+        "filename": "systems_1day.json.gz",
+        "source": "https://downloads.spansh.co.uk/systems_1day.json.gz",
+        "path": "data/raw/systems_1day.json.gz",
+        "downloaded_at": "2026-02-28",
+        "description": "Daily Spansh systems update",
+        "derivations": [
+          "systems_1day.sample.json"
+        ]
+      },
+      {
+        "filename": "systems_1week.json.gz",
+        "source": "https://downloads.spansh.co.uk/systems_1week.json.gz",
+        "path": "data/raw/systems_1week.json.gz",
+        "downloaded_at": "2026-02-28",
+        "description": "Weekly Spansh systems update",
+        "derivations": [
+          "systems_1week.sample.json"
+        ]
+      },
+      {
+        "filename": "systems_2weeks.json.gz",
+        "source": "https://downloads.spansh.co.uk/systems_2weeks.json.gz",
+        "path": "data/raw/systems_2weeks.json.gz",
+        "downloaded_at": "2026-02-28",
+        "description": "Bi-weekly Spansh systems update",
+        "derivations": [
+          "systems_2weeks.sample.json"
+        ]
+      },
+      {
+        "filename": "powerPlay.json.gz",
+        "source": "https://www.edsm.net/dump/powerPlay.json.gz",
+        "path": "data/raw/powerPlay.json.gz",
+        "downloaded_at": "2026-02-28",
+        "description": "EDSM Power Play dump",
+        "derivations": [
+          "powerPlay.sample.json"
+        ]
+      },
+      {
+        "filename": "systemsPopulated.json.gz",
+        "source": "https://www.edsm.net/dump/systemsPopulated.json.gz",
+        "path": "data/raw/systemsPopulated.json.gz",
+        "downloaded_at": "2026-02-28",
+        "description": "EDSM Populated Systems dump",
+        "derivations": [
+          "systemsPopulated.sample.json"
+        ]
+      },
+      {
+        "filename": "bodies7days.json.gz",
+        "source": "https://www.edsm.net/dump/bodies7days.json.gz",
+        "path": "data/raw/bodies7days.json.gz",
+        "downloaded_at": "2026-02-28",
+        "description": "EDSM Bodies dump (last 7 days)",
+        "derivations": [
+          "bodies7days.sample.json"
+        ]
+      }
+    ],
+    "samples": [
+      {
+        "filename": "bodies7days.sample.json",
+        "path": "data/samples/bodies7days.sample.json",
+        "created_at": "2026-02-28",
+        "raw_source": "bodies7days.json.gz",
+        "size_kb": 2.53
+      },
+      {
+        "filename": "systems_2weeks.sample.json",
+        "path": "data/samples/systems_2weeks.sample.json",
+        "created_at": "2026-02-28",
+        "raw_source": "systems_2weeks.json.gz",
+        "size_kb": 1.4
+      },
+      {
+        "filename": "powerPlay.sample.json",
+        "path": "data/samples/powerPlay.sample.json",
+        "created_at": "2026-02-28",
+        "raw_source": "powerPlay.json.gz",
+        "size_kb": 1.37
+      },
+      {
+        "filename": "systems_1day.sample.json",
+        "path": "data/samples/systems_1day.sample.json",
+        "created_at": "2026-02-28",
+        "raw_source": "systems_1day.json.gz",
+        "size_kb": 1.56
+      },
+      {
+        "filename": "systems_1week.sample.json",
+        "path": "data/samples/systems_1week.sample.json",
+        "created_at": "2026-02-28",
+        "raw_source": "systems_1week.json.gz",
+        "size_kb": 1.39
+      },
+      {
+        "filename": "systemsPopulated.sample.json",
+        "path": "data/samples/systemsPopulated.sample.json",
+        "created_at": "2026-02-28",
+        "raw_source": "systemsPopulated.json.gz",
+        "size_kb": 59.47
+      }
+    ],
+    "processed_files": [],
+    "inferred_schemas": [
+      {
+        "table_name": "powerPlay",
+        "path": "data/schemas/powerPlay.sql",
+        "inferred_at": "2026-02-28"
+      },
+      {
+        "table_name": "systems_1day",
+        "path": "data/schemas/systems_1day.sql",
+        "inferred_at": "2026-02-28"
+      },
+      {
+        "table_name": "systems_2weeks",
+        "path": "data/schemas/systems_2weeks.sql",
+        "inferred_at": "2026-02-28"
+      },
+      {
+        "table_name": "bodies7days",
+        "path": "data/schemas/bodies7days.sql",
+        "inferred_at": "2026-02-28"
+      },
+      {
+        "table_name": "systems_1week",
+        "path": "data/schemas/systems_1week.sql",
+        "inferred_at": "2026-02-28"
+      },
+      {
+        "table_name": "systemsPopulated",
+        "path": "data/schemas/systemsPopulated.sql",
+        "inferred_at": "2026-02-28"
+      }
+    ]
+  }
+}

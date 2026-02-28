@@ -10,7 +10,8 @@ __pycache__/
 *$py.class
 
 # Data files (samples, raw, and processed)
-data/
+data/**
+!data/manifest.json
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
