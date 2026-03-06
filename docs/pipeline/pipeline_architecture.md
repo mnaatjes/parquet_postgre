@@ -11,7 +11,7 @@ Your proposed flow is conceptually correct but can be optimized to save disk spa
 | **1. Ingestion** | `Download` | `curl` / `wget` | Retrieve `.json.gz` files into `data/raw/`. |
 | **2. Transformation** | `Stream-Normalize` | **DuckDB** | **Critical Step:** Instead of converting 1:1 to Parquet, we use DuckDB to read the JSON and "explode" it directly into multiple **Normalized Parquet** files (Systems, Stations, Bodies). |
 | **3. Staging** | `Schema Prep` | `SQL` | Create the PostgreSQL database and tables using the SQL definitions in `data/schemas/`. |
-| **4. Ingestion** | `Bulk Load` | `psql COPY` | Load the normalized Parquet files into PostgreSQL. |
+| **4. Loading** | `Bulk Load` | `psql COPY` | Load the normalized Parquet files into PostgreSQL. |
 
 ---
 
